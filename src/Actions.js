@@ -86,6 +86,9 @@ class Actions {
 
       require(actionsPath)(eventBody, userArgs);
     } catch (e) {
+      console.log("===================")
+      console.log(e);
+      console.log("===================")
       console.log(
         "Cant Fire callback from Actions Folder .. Event Path Not Found",
         `./Actions/${this.getEventPath(eventBody.event)}`
